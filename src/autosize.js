@@ -40,9 +40,10 @@ function assign(ta, {setOverflowX = true, setOverflowY = true} = {}) {
 
 		if (style.resize === 'vertical') {
 			ta.style.resize = 'none';
-		} else if (style.resize === 'both') {
-			ta.style.resize = 'horizontal';
 		}
+		// } else if (style.resize === 'both') {
+		// 	ta.style.resize = 'horizontal';
+		// }
 
 		if (style.boxSizing === 'content-box') {
 			heightOffset = -(parseFloat(style.paddingTop)+parseFloat(style.paddingBottom));
